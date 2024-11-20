@@ -43,6 +43,20 @@ docker exec <backend_container_id> python manage.py migrate
 ## About the app
 The application includes a user authentication system along with basic CRUD functionality for books and authors.
 Only the creator of a book can edit or delete it, and only the administrator can edit or delete authors.
+- Frontend stack:
+  - react
+  - typeScript
+  - vite
+  - materialsUi
+  - react dom
+  - localforage
+  - zustand
+- Backend stack:
+  - django
+  - django rest framework
+  - poetry
+  - ruff
+  - django-clean-up
 
 ### Initial data includes:
 - Admin user (username: admin, password: admin)
