@@ -22,21 +22,21 @@ FRONTEND_PORT = "5000"
 ```
 git clone --recurse-submodules --remote-submodules https://github.com/RomanYaresko/bma-application-manager
 
-//install frontend modules
+// install frontend modules
 cd frontend
 npm install
 cd ..
 
-//start app
+// start app
 docker compose up --build
 
-//to check the backend container id
+// to check the backend container id
 docker ps
 
-//migration and initial data load
+// migration and initial data load
 docker exec <backend_container_id> python manage.py migrate
 
-//frontend path - localhost:5000
+// frontend path - localhost:5000
 //backend path - localhost:8000
 ```
 
